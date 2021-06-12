@@ -1,29 +1,17 @@
-```{r, eval=FALSE, include=TRUE}
-"Protocolo:
- 
- 1. Daniel Felipe Villa Rengifo
- 
- 2. Lenguaje: R
- 
- 3. Tema: Árboles de decisión
- 
- 4. Fuentes:  
-    https://rpubs.com/jboscomendoza/arboles_decision_clasificacion"
-```
+## ---- eval=FALSE, include=TRUE-----------------------------------------------------------
+## "Protocolo:
+## 
+##  1. Daniel Felipe Villa Rengifo
+## 
+##  2. Lenguaje: R
+## 
+##  3. Tema: Árboles de decisión
+## 
+##  4. Fuentes:
+##     https://rpubs.com/jboscomendoza/arboles_decision_clasificacion"
 
-# Árboles de decisión
 
-Un árbol de decisión es una estructura ramificada que muestra las diferentes opciones y sus consecuencias. Los puntos en los que hay que tomar decisiones se muestran como nodos, las ramas unen estos nodos y las decisiones últimas son las hojas, donde el camino termina (también se denominan nodos terminales).
-
-Existen varios paquetes de R que permiten hacer árboles de decisión.
-
-## `rpart`
-
-Esta librería `rpart` hace árboles de decisión a partir de tablas. La función principal es `rpart()` que crea, a partir de un conjunto de datos, y de una fórmula de predicción, un árbol de decisión que puede usarse para pronosticar con la función `predict`.
-
-### Ejemplo
-
-```{r}
+## ----------------------------------------------------------------------------------------
 #Para estos ejemplos vamos a inventar nuevamente unos datos. Tenemos una tabla en la que vienen la altura del padre, de la madre y de un hijo. Y queremos ver su relación. 
 
 # creamos los datos de ejemplo
@@ -121,4 +109,3 @@ predict(model.alturas1, h2,type = "class")
 #######RESULTADO:#######
 # 1    2
 # 190  160
-```
